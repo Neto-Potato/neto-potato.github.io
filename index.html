@@ -1,0 +1,84 @@
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+   
+<title>Pokemon Go: Tips and Trick</title> 
+<script>
+function banner(){ 
+var text = confirm("Are you sure????????????"); 
+return text; 
+}
+function answer(){ 
+var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = ":("; 
+
+for( var i = 4; i < radio.length; i++) { 
+if(radio[i].value == "D" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+}//end function answer
+</script>
+</head>
+<body> 
+	<a href="http://google.com" onclick="return banner()">
+		<header id="head"> EVERY FACT EVER!
+	</header>
+</a>
+	<header>HI</header>
+	<header><img src="http://media5.picsearch.com/is?11cWFCEejIDqt5UqKvlvmTcOCHAUGSj0OIIX_MkBF4k&height=202"></header>
+<nav>
+<ul>
+<li class="navitem"><a href="Pokestop.hmtl">Pokestop</a> </li>
+<li class="navitem"><a href="Gym.hmtl">Gym</a> </li>
+<li class="navmitem"><a href="Egg.hmtl">Egg</a> </li>
+</ul>
+</nav>
+<div id="right">
+<h2>Pokemon Go Trivia</h2>
+<p class="paragraph">What Pokemon has the highest CP?<i>(Available in game)</i></p>
+<form>
+	<div id="response"></div>
+	<input type="radio" name="trivia" value="S"> Snorlax<br>
+	<input type="radio" name="trivia" value="L"> Lapras<br>
+	<input type="radio" name="trivia" value="D"> Dragonite<br>
+	<input type="radio" name="trivia" value="R"> Rhydon<br>
+	<input type="button" id="submit" value="Submit!" onclick="answer()">
+</div>
+</form>
+</div>
+<div id="left">
+<h2>Catch Rate</h2>
+<p>There are <b>MANY</b> differnt factors<span class="wrap-text"> that play into the catch rate. </span>
+	Read more to find all about them</p>
+<div class="wrap-list">
+<ol>
+<li class="listitem">Pokemon Species</li>
+<li class="listitem">Cp</li>
+<li class="listitem">Theory:IV</li>
+<li class="listitem">Using a Raspberry or not</li>
+</ol>
+</div>
+<div class="wrap-triva">
+<img src="https://i.reddituploads.
+com/4874030eead7499ab7caff041d523791?fit=max&h=1536&w=1536&
+s=6bd14f530f00d1c7ef8f2b2b884ae039">
+<img src="https://articles-images.sftcdn.net/wp-
+content/uploads/sites/3/2016/07/pokemon-go-oddish-raspberry-300x240.jpg">
+<hr>
+<center><a href="http://pokemongolive.com/en/">Official Website of Pokemon Go</a></center>
+<FOOTER>BYE</FOOTER>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M9ctBliiq1A" frameborder="0" allowfullscreen></iframe>
+</video> 
+</body>
+</html>
